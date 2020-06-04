@@ -53,3 +53,14 @@
 #### 3.2 从远程库克隆
 
 > ##### git clone git@github.com:michaelliao/learngit.git
+
+
+****
+
+#### 4 分支管理
+
+> ##### git checkout -b dev 创建并切换到dev分支
+> ##### git branch 查看当前分支  git checkout 切换分支，切换不同分支文件的内容会发生变化
+> ##### 将dev分支合并到master分支 git merge dev 此命令相当于合并指定分支到当前分支
+> ##### 合并后使用 git branch -d dev 删除此分支
+> ##### git switch -c dev 创建并切换到dev分支  git switch master直接切换到已有的分值
