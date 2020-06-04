@@ -54,6 +54,8 @@
 
 > ##### git clone git@github.com:michaelliao/learngit.git
 
+> #### 远程库克隆下的文件内只有master 若想在其他分支上开发则需要执行类似 git checkout -b dev origin/dev命令
+
 
 ****
 
@@ -64,3 +66,8 @@
 > ##### 将dev分支合并到master分支 git merge dev 此命令相当于合并指定分支到当前分支
 > ##### 合并后使用 git branch -d dev 删除此分支
 > ##### git switch -c dev 创建并切换到dev分支  git switch master直接切换到已有的分值
+
+
+#### 4.1 解决冲突
+
+> ##### 若两个分值的相同文件都发生了更改， git merge后可以在文件内容中查看不同分支的内容，需要自己修改再git add
