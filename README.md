@@ -40,6 +40,16 @@
 
 
 ****
-#### 3、关于远程仓库
+#### 3 关于远程仓库
 
-> ##### 搭建GIT服务器推荐  推荐查看 [廖雪峰老师的搭建GIT服务器](https://www.liaoxuefeng.com/wiki/896043488029600/899998870925664?_blank)
+> ##### 搭建GIT服务器推荐  推荐查看 [廖雪峰老师的搭建GIT服务器](https://www.liaoxuefeng.com/wiki/896043488029600/899998870925664)
+
+#### 3.1 添加远程仓库
+
+> ##### git remote add origin git@github.com:michaelliao/learngit.git 执行命令添加远程仓库，添加后远程库就叫做origin
+> ##### 把本地库的内容推送到远程，用git push命令，实际上是把当前分支master推送到远程。  由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
+> ##### 第一次push后，之后的只要本地作了提交，就可以通过命令 git push origin master 把本地master分支的最新修该推送到git服务器中
+
+#### 3.2 从远程库克隆
+
+> ##### git clone git@github.com:michaelliao/learngit.git
